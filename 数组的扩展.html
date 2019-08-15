@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+	let platformType = {
+	    1: "淘宝集市",
+	    2: "淘宝商城",
+	    4: "京东",
+	    8: "1号店",
+	    16: "当当网",
+	    17: "商派商城",
+	    18: "微盟",
+	    19: "美丽说",
+	    20: "自营平台",
+	    21: "蘑菇街",
+	    22: "卷皮网",
+	    23: "拼多多",
+	    24: "萌店",
+	    25: "国药",
+	    26: "分销王",
+	    27: "苏宁自营",
+	    28: "有赞商城",
+	    29: "国美商城（新）",
+	    30: "易订货",
+	    31: "放心购",
+	    32: "拍拍",
+	    33: "爱库存",
+	    34: "达令",
+	    35: "萌推",
+	    36: "云集",
+	    64: "飞牛",
+	    128: "ebay",
+	    256: "QQ网购",
+	    512: "亚马逊",
+	    1024: "苏宁",
+	    2048: "国美",
+	    4096: "唯品会",
+	    8192: "聚美",
+	    16384: "乐蜂",
+	    65536: "微店",
+	    131072: "麦乐购",
+	    262144: "折800",
+	    524288: "二马路",
+	    1048576: "门店",
+	    2097152: "考拉海购",
+	    4194304: "阿里巴巴",
+	    8388608: "其他",
+	    33554432: "华为商城",
+	    67108864: "淘宝代销",
+	    134217728: "淘宝经销",
+	    268435456: "蜜芽宝贝",
+	    536870912: "贝贝",
+	    1073741824: "楚楚街"
+	};
+	
+	let arrayLike = {
+		'0':'I',
+		'1':'love',
+		'2':'erke',
+		length:3,
+	}
+	
+	let arr = Array.from(arrayLike);
+	console.log(arr);
+	
+	console.log([1,2,3].find((value,index,arr)=>value > 1));
+	
+	console.log([1,2,3].fill(4));
+	
+	for(let index of [1,2,3].keys()){
+		console.log(index);
+	}
+	for(let item of [1,2,3].values()){
+		console.log(item);
+	}
+	for(let [index,item] of [1,2,3].entries()){
+		console.log(index,item);
+	}
+	
+	console.log([1,2,3].includes(1));
+</script>
+</body>
