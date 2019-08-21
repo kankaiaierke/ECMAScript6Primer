@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>函数的扩展</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+	//默认值
+    let addFunc = (x = 0,y = 0) => x + y;
+    console.log(addFunc());
+    //rest参数
+    function add(...values) {
+        let sum = 0;
+        for(var val of values){
+            sum += val;
+        }
+        return sum;
+    }
+    console.log(add(2,5,7));
+    //扩展运算符
+    console.log(...[3,5,8]);
+    //name属性
+    let dothis = function () {
+
+    }
+    console.log(dothis.name)
+    //8.5箭头函数
+    let kankai = ai => ai;
+    console.log(kankai('erke'));
+    //8.6函数绑定
+    //8.7尾调用优化
+    function start(x){
+        end(x);
+    }
+    function end(x){
+        console.log(x);
+    }
+</script>
+</body>
